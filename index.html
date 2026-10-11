@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <title>Mapping Demo</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- This css needs to come first, for some reason. It sets the size of things to come -->
+    <link rel="stylesheet" href="./style.css" />
+    
+    <!-- we need this javascript to read the CSV file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    
+    <!-- These two files let us use the leaflet package to create maps. -->
+    <!-- The includes MUST come in this order, according to the docs -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"></script>
+    
+    <!-- This javascript just contains icon definitions for use during the extra credit -->
+    <script src="./icons.js"></script>
+  </head>
+  <body>
+    <h3>Leaflet Mapping Demo</h3>
+    <div id="map"></div>
+    <!-- Typically, one includes JS files in the head and not the body. However, here we
+    do it in this order because the div containing the map must exist before the leaflet API
+    can add things to the map -->
+    <script src="./interaction.js"></script>
+  </body>
+</html>
